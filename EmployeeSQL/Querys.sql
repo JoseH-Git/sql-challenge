@@ -20,3 +20,12 @@ SELECT dept_manager.dept_no, departments.dept_name, dept_manager.emp_no, employe
 FROM dept_manager
 INNER JOIN departments ON dept_manager.dept_no = departments.dept_no
 INNER JOIN employees ON employees.emp_no = dept_manager.emp_no;
+
+-- 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+
+Select dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
+From dept_emp
+Join employees ON dept_emp.emp_no = employees.emp_no
+JOIN departments ON dept_emp.dept_no = departments.dept_no;
+
+SELECT * from dept_emp

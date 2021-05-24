@@ -40,20 +40,18 @@ CREATE TABLE "dept_manager" (
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
-
+--Couldnt load table when foreing key is configured, need to check.
 CREATE TABLE "dept_emp" (
-    "dept_no" VARCHAR NOT NULL,
     "emp_no" VARCHAR NOT NULL,
-	PRIMARY KEY (emp_no, dept_no),
-    FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
-	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
+	"dept_no" VARCHAR NOT NULL,
+	PRIMARY KEY (emp_no, dept_no)
+----FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+----FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
-
+	
 select * from departments;
 select * from dept_emp;
 select * from dept_manager;
 select * from employees;
 select * from salaries;
 select * from titles;
-
-select * from employees ;

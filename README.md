@@ -1,6 +1,6 @@
 # sql-challenge
 
-![sql.png](sql.png)
+![descarga](https://user-images.githubusercontent.com/80076539/119383033-79cd3d80-bc88-11eb-8ec6-c9c5a8d2bb83.png)
 
 ## Background
 
